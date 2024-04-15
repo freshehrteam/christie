@@ -30,7 +30,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"c3cbc035101c66efde289401a04ae0c0">
+		["MD5-CAM-1.0.1"] = <"7d5d771d5bad3a52568f278e87679140">
 		["build_uid"] = <"7b219b70-e6b8-4c9b-b227-9de5193e888b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -38,6 +38,36 @@ description
 definition
 	CLUSTER[at0000] matches {    -- Cancer diagnosis reporting
 		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Topography
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Morphology
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0035] occurrences matches {0..1} matches {    -- Basis of diagnosis
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Tumour laterality
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029,    -- Bilateral
+							at0030,    -- Right
+							at0031,    -- Left
+							at0032,    -- Midline
+							at0033,    -- Not known
+							at0034]    -- Not applicable
+						}
+					}
+				}
+			}
 			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Recurrence indicator
 				value matches {
 					DV_CODED_TEXT matches {
@@ -50,14 +80,19 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Morphology
+			ELEMENT[at0049] occurrences matches {0..1} matches {    -- Metastatic type
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Topography
+			ELEMENT[at0047] occurrences matches {0..1} matches {    -- Date of metastatic diagnosis
 				value matches {
-					DV_TEXT matches {*}
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0048] occurrences matches {0..1} matches {    -- Date of recurrence/progression
+				value matches {
+					DV_DATE_TIME matches {*}
 				}
 			}
 			ELEMENT[at0017] occurrences matches {0..*} matches {    -- Metastatic site
@@ -77,38 +112,7 @@ definition
 							at0027]    -- 99: Other metastatic site
 						}
 					}
-				}
-			}
-			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Tumour laterality
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0029,    -- Bilateral
-							at0030,    -- Right
-							at0031,    -- Left
-							at0032,    -- Midline
-							at0033,    -- Not known
-							at0034]    -- Not applicable
-						}
-					}
-				}
-			}
-			ELEMENT[at0035] occurrences matches {0..1} matches {    -- Basis of diagnosis
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0039,    -- 0: Death Certificate
-							at0040,    -- 1: Clinical
-							at0041,    -- 2: Clinical Investigation
-							at0042,    -- 4: Specific tumour markers
-							at0043,    -- 5: Cytology
-							at0044,    -- 6: Histology of a metastasis
-							at0045,    -- 7: Histology of a primary tumour
-							at0046]    -- 9: Unknown
-						}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0038] occurrences matches {0..1} matches {    -- Clonal Plasma Cell %
@@ -240,37 +244,17 @@ ontology
 					text = <"Clonal Plasma Cell %">
 					description = <"">
 				>
-				["at0039"] = <
-					text = <"0: Death Certificate">
-					description = <"Death Certificate: The only information available is from a death certificate">
+				["at0047"] = <
+					text = <"Date of metastatic diagnosis">
+					description = <"">
 				>
-				["at0040"] = <
-					text = <"1: Clinical">
-					description = <"Diagnosis made before death but without the benefit of any of the following (2-7)">
+				["at0048"] = <
+					text = <"Date of recurrence/progression">
+					description = <"">
 				>
-				["at0041"] = <
-					text = <"2: Clinical Investigation">
-					description = <"Clinical Investigation: Includes all diagnostic techniques (e.g. X-rays, endoscopy, imaging, ultrasound, exploratory surgery and autopsy) without a tissue diagnosis">
-				>
-				["at0042"] = <
-					text = <"4: Specific tumour markers">
-					description = <"Specific tumour markers: Includes biochemical and/or immunological markers which are specific for a tumour site">
-				>
-				["at0043"] = <
-					text = <"5: Cytology">
-					description = <"Cytology: Examination of cells whether from a primary or secondary site, including fluids aspirated using endoscopes or needles. Also including microscopic examination of peripheral blood films and trephine bone marrow aspirates">
-				>
-				["at0044"] = <
-					text = <"6: Histology of a metastasis">
-					description = <"Histology of a metastasis: Histological examination of tissues from a metastasis, including autopsy specimens">
-				>
-				["at0045"] = <
-					text = <"7: Histology of a primary tumour">
-					description = <"Histology of a primary tumour: Histological examination of tissue from the primary tumour, however obtained, including all cutting and bone marrow biopsies. Also includes autopsy specimens of a primary tumour">
-				>
-				["at0046"] = <
-					text = <"9: Unknown">
-					description = <"Unknown: No information on how the diagnosis has been made (e.g. PAS or HISS record only)">
+				["at0049"] = <
+					text = <"Metastatic type">
+					description = <"">
 				>
 			>
 		>
