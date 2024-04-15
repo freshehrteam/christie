@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0-alpha",
+      "sem_ver" : "1.0.0-alpha",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "611E29DA4F53EA8344AD9B2AA38E0F0E",
-      "MD5-CAM-1.0.1" : "526adbfc2d98cd2b6b3f4f057754f511"
+      "MD5-CAM-1.0.1" : "54f5a175d3bd08afa458e5a2a017444e"
     },
     "details" : {
       "en" : {
@@ -1617,6 +1617,12 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Treatment synopsis",
+            "description" : "Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."
+          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
