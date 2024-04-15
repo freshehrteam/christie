@@ -10,9 +10,9 @@ language
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
-				["name"] = <"Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg">
+				["name"] = <"Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch">
 				["organisation"] = <"Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover">
-				["email"] = <"Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de">
+				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
 		["sv"] = <
@@ -40,9 +40,8 @@ language
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
-				["name"] = <"Silje Ljosland Bakke, John Tore Valand, Liv Laugen">
-				["organisation"] = <"Helse Bergen HF, ​Oslo University Hospital, Norway">
-				["email"] = <"liv.laugen@ous-hf.no">
+				["name"] = <"Silje Ljosland Bakke, John Tore Valand">
+				["organisation"] = <"Helse Bergen HF">
 			>
 		>
 		["ko"] = <
@@ -553,6 +552,12 @@ Not to be used to record statements about adverse reactions, allergies or intole
 
 Not to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)">
 		>
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			other_details = <
+				["notes"] = <"Generated automatically by Adl Designer">
+			>
+		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.
@@ -573,12 +578,6 @@ No se debe utilizar para registrar riesgos o problemas potenciales, para eso uti
 
 No se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis">
 		>
-		["zh"] = <
-			language = <[ISO_639-1::zh]>
-			other_details = <
-				["notes"] = <"Generated automatically by Adl Designer">
-			>
-		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -594,9 +593,9 @@ Weed LL. Medical records that guide and teach. N Engl J Med. 1968 Mar 14;278(11)
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"70083C267A35C88E111E5BA35120DE86">
-		["build_uid"] = <"008d51dd-0f67-46f6-9fb1-de97aa4d79bb">
-		["revision"] = <"1.3.1">
+		["MD5-CAM-1.0.1"] = <"86372236E61A02A1C3905BA9033C255F">
+		["build_uid"] = <"3dad3e6a-4444-4069-b22b-aed20b9c7377">
+		["revision"] = <"1.1.1">
 	>
 
 definition
@@ -605,11 +604,6 @@ definition
 			ITEM_TREE[at0001] matches {    -- structure
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0002] matches {    -- Problem/Diagnosis name
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0079] occurrences matches {0..1} matches {    -- Variant
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -672,7 +666,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0046] occurrences matches {0..*} matches {    -- Status
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v2/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					ELEMENT[at0073] occurrences matches {0..1} matches {    -- Diagnostic certainty
 						value matches {
@@ -830,11 +824,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["es-ar"] = <
@@ -955,11 +944,6 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["de"] = <
@@ -1077,11 +1061,6 @@ Si la localización anatómica está incluida en el nombre del problema o diagn�
 					text = <"Ursache">
 					description = <"Die Ursache, eine Reihe von Ursachen oder eine Art und Weise der Verursachung des Problems oder der Diagnose.">
 					comment = <"Auch bekannt als „Ätiologie“. Die Codierung mit einer externen Terminologie wird nach Möglichkeit bevorzugt.">
-				>
-				["at0079"] = <
-					text = <"Variante">
-					description = <"Spezifische Variante oder Subtyp der Diagnose, falls relevant.">
-					comment = <"Zum Beispiel: „Akute motorische axonale Neuropathie“ als Variante des Guillain-Barre-Syndroms. Wo möglich, ist die Kodierung des Namens der Variante über eine Terminologie zu bevorzugen.">
 				>
 			>
 		>
@@ -1205,11 +1184,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					description = <"A cause, set of causes, or manner of causation of the problem or diagnosis.">
 					comment = <"Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.">
 				>
-				["at0079"] = <
-					text = <"Variant">
-					description = <"Specific variant or subtype of the Diagnosis, if relevant.">
-					comment = <"For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. ">
-				>
 			>
 		>
 		["ar-sy"] = <
@@ -1329,11 +1303,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					text = <"*Cause (en)">
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
-				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
 				>
 			>
 		>
@@ -1460,11 +1429,6 @@ Por exemplo: evolução do estado: inicial, inativo, resolvido, em remissão; es
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["nb"] = <
@@ -1563,7 +1527,7 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 				["at0073"] = <
 					text = <"Diagnostisk sikkerhet">
 					description = <"Grad av sikkerhet i identifikasjonen av diagnosen.">
-					comment = <"Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.">
+					comment = <"*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)">
 				>
 				["at0074"] = <
 					text = <"Mistenkt">
@@ -1583,14 +1547,9 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 					comment = <"Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato.">
 				>
 				["at0078"] = <
-					text = <"Årsak">
-					description = <"En årsak, kjede av årsaker til, eller hendelsesforløp forut for problemet eller diagnosen.">
-					comment = <"Også kjent som 'etiologi'. Det anbefales å kode \"Årsak\" med en ekstern terminologi dersom det er mulig.">
-				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
+					text = <"*Cause (en)">
+					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
+					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
 			>
 		>
@@ -1714,11 +1673,6 @@ Inskrivningsstatus: Inskrivning och utskrivning Prioritetsstatus: Primär och se
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["ko"] = <
@@ -1839,11 +1793,6 @@ Inskrivningsstatus: Inskrivning och utskrivning Prioritetsstatus: Primär och se
 					text = <"*Cause (en)">
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
-				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
 				>
 			>
 		>
@@ -1966,11 +1915,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["it"] = <
@@ -2088,11 +2032,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					text = <"*Cause (en)">
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
-				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
 				>
 			>
 		>
@@ -2216,11 +2155,6 @@ Use this data element to record precoordinated anatomical locations. If the requ
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
 				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
-				>
 			>
 		>
 		["zh"] = <
@@ -2340,11 +2274,6 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
 					text = <"*Cause (en)">
 					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
 					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
-				>
-				["at0079"] = <
-					text = <"*Variant (en)">
-					description = <"*Specific variant or subtype of the Diagnosis, if relevant. (en)">
-					comment = <"*For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible.  (en)">
 				>
 			>
 		>
