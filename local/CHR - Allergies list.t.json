@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.1",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "16225390a55eca6ec3a564d9d501fdaf",
+      "MD5-CAM-1.0.1" : "7f24d7a5385e2d8deffee75daf9deda7",
       "is_singleton" : "ehr",
       "PARENT:MD5-CAM-1.0.1" : "41914AB89EC39C22523B4461C349BB17"
     },
@@ -181,7 +181,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "CMC Allergies list",
+          "text" : "Allergies list",
           "description" : "A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."
         }
       },
@@ -587,120 +587,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "CMC-Allergy"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "CMC-Allergy" ],
-                      "limitToList" : false,
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "E3",
-                        "value" : "Animals"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M3",
-                        "value" : "Anticonvulsives"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "PR1",
-                        "value" : "Cosmetic Allergy"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "FO3",
-                        "value" : "Dairy Intolerance"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "E2",
-                        "value" : "Dust"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "FO5",
-                        "value" : "Fish Allergy"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M4",
-                        "value" : "Insulin"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M6",
-                        "value" : "Iodine"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "FO2",
-                        "value" : "Lactose (Milk) Intolerance"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M5",
-                        "value" : "Local Anesthetics"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "E1",
-                        "value" : "Mould"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "FO4",
-                        "value" : "Nut Allergy"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M1",
-                        "value" : "Penicillin"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "E5",
-                        "value" : "Pollen Allergy"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "STK",
-                        "value" : "Sticking Plaster"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "M2",
-                        "value" : "Sulfa"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "FO1",
-                        "value" : "Wheat Intolerance"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "OTHER",
-                        "value" : "Other"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "OTHERDRUG",
-                        "value" : "Other Drug Allergy (please specify in details)"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "OTHERENV",
-                        "value" : "Other Environmental Allergy (please specify in details)"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "OTHERFOOD",
-                        "value" : "Other Food Allergy (please specify in details)"
-                      }, {
-                        "terminologyId" : "CMC-Allergy",
-                        "code" : "OTHERPROD",
-                        "value" : "Other Product Allergy (please specify in details)"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
