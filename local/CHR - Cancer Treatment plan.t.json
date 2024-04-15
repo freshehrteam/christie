@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha",
+      "sem_ver" : "1.1.0-alpha",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "611E29DA4F53EA8344AD9B2AA38E0F0E",
-      "MD5-CAM-1.0.1" : "067e667c8171a6942ada32454267879f"
+      "MD5-CAM-1.0.1" : "ad2f49f3b55661e475df5192465ac215"
     },
     "details" : {
       "en" : {
@@ -92,7 +92,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "KAR - Cancer Treatment plan",
+          "text" : "Cancer Treatment plan",
           "description" : "A persistent and managed list of any combination of archetypes that will support the accurate recording of a Care plan."
         }
       }
