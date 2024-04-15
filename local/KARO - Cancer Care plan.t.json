@@ -24,7 +24,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a02aa9d0b666a2c378497cbd705472d9"
+      "MD5-CAM-1.0.1" : "a02aa9d0b666a2c378497cbd705472d9",
+      "PARENT:MD5-CAM-1.0.1" : "611E29DA4F53EA8344AD9B2AA38E0F0E"
     },
     "details" : {
       "en" : {
@@ -246,7 +247,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -761,7 +764,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "70083C267A35C88E111E5BA35120DE86"
+        "PARENT:MD5-CAM-1.0.1" : "86372236E61A02A1C3905BA9033C255F"
       },
       "details" : {
         "de" : {
@@ -6615,7 +6618,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "70083C267A35C88E111E5BA35120DE86"
+        "PARENT:MD5-CAM-1.0.1" : "86372236E61A02A1C3905BA9033C255F"
       },
       "details" : {
         "de" : {
@@ -14276,7 +14279,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -21777,7 +21782,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C3362CD4E1C6A0A7484CBD220AA6A306"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -22881,7 +22888,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3f89d6954f628d7e5e620eee1a9ea7a4"
+      },
       "details" : {
         "sv" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -24731,7 +24740,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "953432F4BBFC4D09C6285563D2317D5C"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -25737,7 +25748,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -26233,7 +26246,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "79CCC1762AFD328C6AB3C495A8B89C3C"
+      },
       "details" : {
         "pt-br" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
