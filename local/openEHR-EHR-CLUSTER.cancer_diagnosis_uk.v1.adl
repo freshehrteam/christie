@@ -30,7 +30,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"16005942cdb5d967a832739f01544834">
+		["MD5-CAM-1.0.1"] = <"c0cf3b89c38677ef20f7cc7799ce70c4">
 		["build_uid"] = <"7b219b70-e6b8-4c9b-b227-9de5193e888b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -126,6 +126,10 @@ definition
 						>
 					>
 				}
+			}
+			allow_archetype CLUSTER[at0050] occurrences matches {0..*} matches {    -- Staging
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -254,6 +258,10 @@ ontology
 				>
 				["at0049"] = <
 					text = <"Metastatic type">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Staging">
 					description = <"">
 				>
 			>
