@@ -138,24 +138,22 @@ Nicht zur Darstellung der Länge eines Objekts oder eines bestimmten Körperteil
 
 ">
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"*To record the length of the body from crown of head to sole of foot of an individual - both actual and approximate, and either in a standing or recumbent position.(en)">
-			keywords = <"*shrinkage(en)","*increase(en)","*decrease(en)","*height loss(en)","*height(en)","*length(en)","*growth(en)">
-			use = <"*To be used for recording the actual height or body length of an individual at any point in time.  A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' protocol element, if required.  This is the usual archetype to be used for a typical measurement of height or body length, independent of the clinical setting.
-
-Can also be used for recording an approximation of height or body length measurement in a clinical scenario where it is not possible to measure an accurate height or length - for example, measuring an uncooperative child.  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Height data field to indicate that the recorded height is an approximation, rather than actual.
-
-In general, length measurements are recommended for children under 2 years of age and individuals who cannot stand; height measurements for all others.
-
-Ideally, height is measured standing on both feet with weight distributed evenly, heels together and both buttocks and heels in contact with a vertical back board; body length is measured in a fully extended, supine position with the pelvis flat, legs extended and feet flexed. 
-
-Use to record growth or loss of height.  This can currently be modelled by constraining the 'any event' to an interval event within a template, with the associated mathematical function of increase or decrease, as appropriate.(en)">
-			misuse = <"*Not to be used to record the adjusted height or body length eg a calculation of the estimated full height of a person with limb contractures, based on other body part measurements and/or an algorithm - use OBSERVATION.height-adjusted.
-
-Not to be used to record growth velocity.
-
-Not to be used to record the length of an object or specific body part.(en)">
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Для записи длины тела человека от макушки до пяток - как фактических, так и приближенных, стоя или лежа.
+">
+			keywords = <"сжатие","Увеличение","снижение","высота потери","Высота","Длина","рост">
+			copyright = <"© openEHR Foundation">
+			use = <"Для записи фактической длины тела индивида в любой момент времени. В случае необходимости физическая неполнота тела может быть записана в протоколе - элемент \"Смешанные факторы. Это обычный образец, который будет использоваться для типичного измерения  длины тела, независимо от клинических условий.
+Может также использоваться для записи приблизителной длины тела в клиническом сценарии, где не возможно измерить точную высоту или длину - например, у ребенка. Это обстоятельство явно не указывается в архетипе, так как модель openEHR позволяет использовать атрибут приближения для любого типа количественных данных. Например, в интерфейсе приложения пользователь может позволить врачам, выбрать надлежащим образом маркированных флажок рядом с полем данных Рост чтобы показать, что записано приблизительное значение, а не фактический.
+Измерения длины тела рекомендуется для детей младше 2 лет и лицам, которые не могут стоять, рост стоя, для всех остальных.
+В идеале, рост измеряется стоя на двух ногах с весом распределяется равномерно, пятки вместе, и обе ягодицы и пятки в контакте с вертикальной поверхностью, длина тела измеряется в вытянутом положении лежа таз находится на плоскости, ноги вытянуты и ноги согнуты .
+Используется для записи роста (ребёнка) и потери высоты. В случае необходимости, подобное применение настоящее время может быть смоделировано путем ограничения \"any event\", до интервала, с соответствующей математической функцией увеличения или уменьшения в шаблоне.
+">
+			misuse = <"Не следует использовать для записи длины тела новорожденного - использовать специализацию этого архетипа - см. OBSERVATION.height-birth.
+Не следует использовать для записи скорректированной длины тела, например, расчет предполажительного роста человека с контрактурами конечностей, на основании  измерения других частей телаи / или алгоритмов - используйте OBSERVATION.height-adjusted.
+Не следует использовать для записи скорости роста.
+Не использовать для записи длины объекта или определенной части тела.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -174,41 +172,24 @@ Ska inte användas för att dokumentera tillväxthastighet.
 
 Ska inte användas för att dokumentera längd av ett objekt eller en viss kroppsdel.">
 		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			purpose = <"Для записи длины тела человека от макушки до пяток - как фактических, так и приближенных, стоя или лежа.
-">
-			keywords = <"сжатие","Увеличение","снижение","высота потери","Высота","Длина","рост">
-			copyright = <"© openEHR Foundation">
-			use = <"Для записи фактической длины тела индивида в любой момент времени. В случае необходимости физическая неполнота тела может быть записана в протоколе - элемент \"Смешанные факторы. Это обычный образец, который будет использоваться для типичного измерения  длины тела, независимо от клинических условий.
-Может также использоваться для записи приблизителной длины тела в клиническом сценарии, где не возможно измерить точную высоту или длину - например, у ребенка. Это обстоятельство явно не указывается в архетипе, так как модель openEHR позволяет использовать атрибут приближения для любого типа количественных данных. Например, в интерфейсе приложения пользователь может позволить врачам, выбрать надлежащим образом маркированных флажок рядом с полем данных Рост чтобы показать, что записано приблизительное значение, а не фактический.
-Измерения длины тела рекомендуется для детей младше 2 лет и лицам, которые не могут стоять, рост стоя, для всех остальных.
-В идеале, рост измеряется стоя на двух ногах с весом распределяется равномерно, пятки вместе, и обе ягодицы и пятки в контакте с вертикальной поверхностью, длина тела измеряется в вытянутом положении лежа таз находится на плоскости, ноги вытянуты и ноги согнуты .
-Используется для записи роста (ребёнка) и потери высоты. В случае необходимости, подобное применение настоящее время может быть смоделировано путем ограничения \"any event\", до интервала, с соответствующей математической функцией увеличения или уменьшения в шаблоне.
-">
-			misuse = <"Не следует использовать для записи длины тела новорожденного - использовать специализацию этого архетипа - см. OBSERVATION.height-birth.
-Не следует использовать для записи скорректированной длины тела, например, расчет предполажительного роста человека с контрактурами конечностей, на основании  измерения других частей телаи / или алгоритмов - используйте OBSERVATION.height-adjusted.
-Не следует использовать для записи скорости роста.
-Не использовать для записи длины объекта или определенной части тела.">
-		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"Brukes til registrering av et individs høyde/lengde fra isse til fotsåle - både målt, estimert og justert, enten stående, tilbakelent eller liggende.">
-			keywords = <"høydetap","høyde","lengde","vekst","høydevekst","lengdevekst","kroppshøyde","kroppslengde">
-			use = <"Brukes til registrering av høyden eller lengden til et individ ved et gitt tidspunkt. En kommentar som identifiserer eventuelle fysiske mangler kan ved behov registreres i dataelementet \"Supplerende opplysninger\". Dette er standardarketypen som skal brukes for en vanlig måling av høyde eller lengde, uavhengig av klinisk miljø.
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"*To record the length of the body from crown of head to sole of foot of an individual - both actual and approximate, and either in a standing or recumbent position.(en)">
+			keywords = <"*shrinkage(en)","*increase(en)","*decrease(en)","*height loss(en)","*height(en)","*length(en)","*growth(en)">
+			use = <"*To be used for recording the actual height or body length of an individual at any point in time.  A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' protocol element, if required.  This is the usual archetype to be used for a typical measurement of height or body length, independent of the clinical setting.
 
-Kan også brukes for registrering av estimert høyde eller lengde i en klinisk situasjon hvor det ikke er mulig å måle en nøyaktig høyde eller lengde - for eksempel måling av et ikke-samarbeidsvillig barn. Dette er ikke eksplisitt modellert inn i arketypen idet openEHR referansemodellen tillater estimater for datatypen kvantitet (magnitude_status settes til \"~\"). Ved implementasjon kan det for eksempel settes kryss i en boks ved siden av datafeltet for høyde/lengde for å indikere at den registrerte høyden/lengden er et estimat.
+Can also be used for recording an approximation of height or body length measurement in a clinical scenario where it is not possible to measure an accurate height or length - for example, measuring an uncooperative child.  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Height data field to indicate that the recorded height is an approximation, rather than actual.
 
-Generelt sett er det anbefalt å måle lengde for barn under 2 år og individer som ikke kan stå, og høyde for alle andre.
+In general, length measurements are recommended for children under 2 years of age and individuals who cannot stand; height measurements for all others.
 
-Ved registrering av den første lengden til et spedbarn kort tid etter fødselen, \"fødselslengde '- bruk hendelsen \"Fødsel\".
+Ideally, height is measured standing on both feet with weight distributed evenly, heels together and both buttocks and heels in contact with a vertical back board; body length is measured in a fully extended, supine position with the pelvis flat, legs extended and feet flexed. 
 
-Brukes til å registrere vekst eller tap av høyde. Dette kan modelleres ved å begrense \"Uspesifisert hendelse\" til en tidsintervallhendelse i en templat, og legge til en matematisk funksjon for økning eller minking, ettersom hva som passer.">
-			misuse = <"Brukes ikke til å registrere justert høyde eller lengde, det vil si en beregning av den fulle høyden av en person som for eksempel mangler hele eller deler av underekstremitetene eller har kontrakturer. En justert høyde/lengde kan være basert på målinger av andre kroppsdeler samt en algoritme. Bruk spesfikke arketyper laget for dette formålet.
+Use to record growth or loss of height.  This can currently be modelled by constraining the 'any event' to an interval event within a template, with the associated mathematical function of increase or decrease, as appropriate.(en)">
+			misuse = <"*Not to be used to record the adjusted height or body length eg a calculation of the estimated full height of a person with limb contractures, based on other body part measurements and/or an algorithm - use OBSERVATION.height-adjusted.
 
-Brukes ikke til å registrere veksthastighet.
+Not to be used to record growth velocity.
 
-Brukes ikke til å registrere lengden av et ikke-kroppslig objekt eller en bestemt del av kroppen.">
+Not to be used to record the length of an object or specific body part.(en)">
 		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
@@ -232,6 +213,25 @@ No usar para registrar velocidad de crecimiento.
 
 No usar para registrar la longitud de un objeto o de una parte del cuerpo específica.">
 		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes til registrering av et individs høyde/lengde fra isse til fotsåle - både målt, estimert og justert, enten stående, tilbakelent eller liggende.">
+			keywords = <"høydetap","høyde","lengde","vekst","høydevekst","lengdevekst","kroppshøyde","kroppslengde">
+			use = <"Brukes til registrering av høyden eller lengden til et individ ved et gitt tidspunkt. En kommentar som identifiserer eventuelle fysiske mangler kan ved behov registreres i dataelementet \"Supplerende opplysninger\". Dette er standardarketypen som skal brukes for en vanlig måling av høyde eller lengde, uavhengig av klinisk miljø.
+
+Kan også brukes for registrering av estimert høyde eller lengde i en klinisk situasjon hvor det ikke er mulig å måle en nøyaktig høyde eller lengde - for eksempel måling av et ikke-samarbeidsvillig barn. Dette er ikke eksplisitt modellert inn i arketypen idet openEHR referansemodellen tillater estimater for datatypen kvantitet (magnitude_status settes til \"~\"). Ved implementasjon kan det for eksempel settes kryss i en boks ved siden av datafeltet for høyde/lengde for å indikere at den registrerte høyden/lengden er et estimat.
+
+Generelt sett er det anbefalt å måle lengde for barn under 2 år og individer som ikke kan stå, og høyde for alle andre.
+
+Ved registrering av den første lengden til et spedbarn kort tid etter fødselen, \"fødselslengde '- bruk hendelsen \"Fødsel\".
+
+Brukes til å registrere vekst eller tap av høyde. Dette kan modelleres ved å begrense \"Uspesifisert hendelse\" til en tidsintervallhendelse i en templat, og legge til en matematisk funksjon for økning eller minking, ettersom hva som passer.">
+			misuse = <"Brukes ikke til å registrere justert høyde eller lengde, det vil si en beregning av den fulle høyden av en person som for eksempel mangler hele eller deler av underekstremitetene eller har kontrakturer. En justert høyde/lengde kan være basert på målinger av andre kroppsdeler samt en algoritme. Bruk spesfikke arketyper laget for dette formålet.
+
+Brukes ikke til å registrere veksthastighet.
+
+Brukes ikke til å registrere lengden av et ikke-kroppslig objekt eller en bestemt del av kroppen.">
+		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para registar o comprimento do corpo de um indivíduo, medindo da coroa da cabeça a sola do pé.
@@ -249,26 +249,6 @@ Use para registar um crescimento e perda de altura. Isso pode ser modelado por r
 Não deve ser utilizado para registrar a altura ajustada ou comprimento do corpo por exemplo, um cálculo da altura estimada completo de uma pessoa com contraturas dos membros, com base em medições outro corpo e / ou um algoritmo - use OBSERVATION.height-adjusted.
 Não deve ser usado para registrar a velocidade de crescimento.
 Não deve ser utilizado para gravar o tamanho de um objeto ou parte específica do corpo.">
-		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the length of the body from crown of head to sole of foot of an individual - either measured or approximated, and either in a standing or recumbent position.">
-			keywords = <"shrinkage","increase","decrease","height loss","height","length","growth">
-			copyright = <"© openEHR Foundation">
-			use = <"To be used for recording the measured height or body length of an individual at any point in time.  A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' protocol element, if required.  This is the usual archetype to be used for a typical measurement of height or body length, independent of the clinical setting.
-
-Can also be used for recording an approximation of height or body length measurement in a clinical scenario where it is not possible to measure an accurate height or length - for example, measuring an uncooperative child.  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Height data field to indicate that the recorded height is an approximation, rather than actual.
-
-In general, length measurements are recommended for children under 2 years of age and individuals who cannot stand; height measurements for all others.
-
-When recording the first length of an infant shortly after birth, \"birth length\", use the event \"Birth\".
-
-Use to record growth or loss of height.  This can currently be modelled by constraining the 'any event' to an interval event within a template, with the associated mathematical function of increase or decrease, as appropriate.">
-			misuse = <"Not to be used to record an adjusted height, a calculation of the full height of a person who for example are missing parts or all of the lower limbs, or has contractures. A calculated body weight may be based on measurements of other body parts and an algorithm. Use specific archetypes for this purpose.
-
-Not to be used to record growth velocity.
-
-Not to be used to record the length of an object or specific body part.">
 		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
@@ -293,6 +273,26 @@ Not to be used to record the length of an object or specific body part.">
 لا يستخدم لتسجيل الطول أو الارتفاع المُصَحَّح مثل الطول الكلي التقديري للفرد الذي يعاني من تقلصات الأطراف, بناء على قياسات أجزاء أخرى من الجسم و / أو لوغاريتم - استخدم بدلا من ذلك نموذج ملاحظة . الطول المصحح. 
 لا يستخدم لقياس سرعة النمو.
 لا يستخدم لتسجيل طول شيئ ما أو جزء معين من الجسم.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the length of the body from crown of head to sole of foot of an individual - either measured or approximated, and either in a standing or recumbent position.">
+			keywords = <"shrinkage","increase","decrease","height loss","height","length","growth">
+			copyright = <"© openEHR Foundation">
+			use = <"To be used for recording the measured height or body length of an individual at any point in time.  A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' protocol element, if required.  This is the usual archetype to be used for a typical measurement of height or body length, independent of the clinical setting.
+
+Can also be used for recording an approximation of height or body length measurement in a clinical scenario where it is not possible to measure an accurate height or length - for example, measuring an uncooperative child.  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Height data field to indicate that the recorded height is an approximation, rather than actual.
+
+In general, length measurements are recommended for children under 2 years of age and individuals who cannot stand; height measurements for all others.
+
+When recording the first length of an infant shortly after birth, \"birth length\", use the event \"Birth\".
+
+Use to record growth or loss of height.  This can currently be modelled by constraining the 'any event' to an interval event within a template, with the associated mathematical function of increase or decrease, as appropriate.">
+			misuse = <"Not to be used to record an adjusted height, a calculation of the full height of a person who for example are missing parts or all of the lower limbs, or has contractures. A calculated body weight may be based on measurements of other body parts and an algorithm. Use specific archetypes for this purpose.
+
+Not to be used to record growth velocity.
+
+Not to be used to record the length of an object or specific body part.">
 		>
 		["fa"] = <
 			language = <[ISO_639-1::fa]>
