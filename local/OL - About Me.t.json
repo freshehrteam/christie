@@ -25,7 +25,8 @@
       "sem_ver" : "2.7.2",
       "MD5-CAM-1.0.1" : "4a6ee559736ef4817042d1972e413ca4",
       "build_uid" : "",
-      "is_singleton" : "ehr"
+      "is_singleton" : "ehr",
+      "PARENT:MD5-CAM-1.0.1" : "774f2b613d27f7301a5d91c00bdfab26"
     },
     "details" : {
       "en" : {
@@ -2491,7 +2492,8 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org."
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.",
+        "PARENT:MD5-CAM-1.0.1" : "E62D896E2577FA727C75A9EFFD7CA63E"
       },
       "details" : {
         "en" : {
@@ -2888,7 +2890,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "42E30743E5A093075AA65AAF9B890DC0"
+      },
       "details" : {
         "nb" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -3386,7 +3390,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "24F9269BA97E8326019D7D780C318873"
+      },
       "details" : {
         "nb" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -4960,7 +4966,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "37053661135B974855AAA356073EA23A"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -5812,7 +5820,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C186DA445F8C45636F769D02CD5758DF"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -8093,7 +8103,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "03652097aa3bf8fa51d93931a7337149"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -8521,7 +8533,8 @@
         "original_namespace" : "org.openehr",
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
-        "MD5-CAM-1.0.1" : "ac8c0077c7324ccb317ccd903b22aee8"
+        "MD5-CAM-1.0.1" : "ac8c0077c7324ccb317ccd903b22aee8",
+        "PARENT:MD5-CAM-1.0.1" : "837216B3380EEE7CDC8C974E487FE65F"
       },
       "details" : {
         "en" : {
@@ -8977,7 +8990,8 @@
         "original_namespace" : "org.openehr",
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
-        "MD5-CAM-1.0.1" : "2486d52dd8c78af812dc36dee7b3d091"
+        "MD5-CAM-1.0.1" : "2486d52dd8c78af812dc36dee7b3d091",
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -9405,7 +9419,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "cb43f0f90b4194cfafa7c2a55a56f648"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -11369,7 +11385,8 @@
         "original_namespace" : "org.openehr",
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
-        "MD5-CAM-1.0.1" : "ac8c0077c7324ccb317ccd903b22aee8"
+        "MD5-CAM-1.0.1" : "ac8c0077c7324ccb317ccd903b22aee8",
+        "PARENT:MD5-CAM-1.0.1" : "837216B3380EEE7CDC8C974E487FE65F"
       },
       "details" : {
         "en" : {
@@ -11835,7 +11852,8 @@
         "original_namespace" : "org.openehr",
         "original_publisher" : "openEHR Foundation",
         "custodian_namespace" : "org.openehr",
-        "MD5-CAM-1.0.1" : "2486d52dd8c78af812dc36dee7b3d091"
+        "MD5-CAM-1.0.1" : "2486d52dd8c78af812dc36dee7b3d091",
+        "PARENT:MD5-CAM-1.0.1" : "895F99CC13DF97E2BEE2DD159E440414"
       },
       "details" : {
         "en" : {
@@ -12243,7 +12261,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "75F0FE57A0A92ECC8129254AAAE50E4F"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -13112,7 +13132,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "BF9B28403CBB9F2FB9C120F3EB89DA8E"
+      },
       "details" : {
         "de" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -14843,7 +14865,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "aaf1833c40e5eae8d681a4b25cb2c16c"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -15026,7 +15050,8 @@
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "9ae75f64605357b3a4f708d0db0e79ee",
         "sem_ver" : "0.1.0",
-        "build_uid" : ""
+        "build_uid" : "",
+        "PARENT:MD5-CAM-1.0.1" : "24510AD8D321EC3190E3C035E611E111"
       },
       "details" : {
         "de" : {
@@ -16585,7 +16610,8 @@
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "9ae75f64605357b3a4f708d0db0e79ee",
         "sem_ver" : "0.1.0",
-        "build_uid" : ""
+        "build_uid" : "",
+        "PARENT:MD5-CAM-1.0.1" : "24510AD8D321EC3190E3C035E611E111"
       },
       "details" : {
         "de" : {
@@ -18144,7 +18170,8 @@
         "custodian_namespace" : "org.openehr",
         "MD5-CAM-1.0.1" : "9ae75f64605357b3a4f708d0db0e79ee",
         "sem_ver" : "0.1.0",
-        "build_uid" : ""
+        "build_uid" : "",
+        "PARENT:MD5-CAM-1.0.1" : "24510AD8D321EC3190E3C035E611E111"
       },
       "details" : {
         "de" : {
@@ -19690,7 +19717,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "24F9269BA97E8326019D7D780C318873"
+      },
       "details" : {
         "nb" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -20307,7 +20336,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4DD4327B2A07666ACC92DBB0FDE0B2EC"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
@@ -20716,7 +20747,9 @@
       "ipAcknowledgements" : { },
       "references" : { },
       "conversionDetails" : { },
-      "otherDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "a656133e22f1d86764b1c5e39b6d1620"
+      },
       "details" : {
         "en" : {
           "@type" : "RESOURCE_DESCRIPTION_ITEM",
