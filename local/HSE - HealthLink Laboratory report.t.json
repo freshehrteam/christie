@@ -19,7 +19,7 @@
     "otherDetails" : {
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
       "MD5-CAM-1.0.1" : "0e93e22c9d71df90c14183f305e9828c",
-      "sem_ver" : "1.1.0-alpha",
+      "sem_ver" : "2.0.0-alpha",
       "build_uid" : ""
     },
     "details" : {
