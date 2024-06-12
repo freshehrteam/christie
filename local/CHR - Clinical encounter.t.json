@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.0-alpha.2",
+      "sem_ver" : "2.0.0-alpha.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "baec6f0f913e205ba268646514e8e4d3",
+      "MD5-CAM-1.0.1" : "f0d372272bab9db32905a9d14b09ccbc",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -3287,7 +3287,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "First visit", "Follow-up visit" ]
+                      "constraint" : [ "First visit", "Follow-up visit", "Final appt" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
