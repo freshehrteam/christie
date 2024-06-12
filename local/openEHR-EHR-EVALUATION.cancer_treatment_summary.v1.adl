@@ -26,13 +26,13 @@ description
 		["original_namespace"] = <"uk.org.apperta">
 		["original_publisher"] = <"Apperta Foundation">
 		["custodian_namespace"] = <"uk.org.apperta">
-		["MD5-CAM-1.0.1"] = <"556839c590e59d2a668505cfcfff4548">
+		["MD5-CAM-1.0.1"] = <"27a596a243e330b94b3d905c34d06b74">
 		["build_uid"] = <"2656685a-019f-3ca8-bc1a-feb4961eb1ba">
 		["revision"] = <"1.0.0-alpha.1">
 	>
 
 definition
-	EVALUATION[at0000] matches {    -- Cancer treatment summary
+	EVALUATION[at0000] matches {    -- Cancer journey summary
 		data matches {
 			ITEM_TREE[at0004] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
@@ -68,30 +68,160 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Previous surgery - primary disease
-						value matches {
-							DV_CODED_TEXT matches {*}
+					CLUSTER[at0026] occurrences matches {0..1} matches {    -- Previous surgery
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0013] occurrences matches {0..1} matches {    -- Primary disease
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Nodal surgery
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0015] occurrences matches {0..1} matches {    -- Reconstruction
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0017] occurrences matches {0..*} matches {    -- Other surgery
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0016] occurrences matches {0..1} matches {    -- Date of surgery
+								value matches {
+									DV_DATE matches {*}
+								}
+							}
+							ELEMENT[at0018] occurrences matches {0..1} matches {    -- Resection margin distance
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0019,    -- Involved
+											at0020,    -- Below 1.00mm
+											at0021,    -- 1.00 to 2.00mm
+											at0022,    -- 2.01 to 5.00mm
+											at0023,    -- 5.01 to 10 .00mm
+											at0024,    -- greater than 10.00mm
+											at0025]    -- Not known
+										}
+									}
+								}
+							}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Previous surgery - nodal surgery
-						value matches {
-							DV_CODED_TEXT matches {*}
+					CLUSTER[at0027] occurrences matches {0..1} matches {    -- Histology summary
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0031] occurrences matches {0..1} matches {    -- Nodal status
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0032,    -- Negative
+											at0033,    -- Positive
+											at0034,    -- Not known
+											at0035]    -- Awaited
+										}
+									}
+								}
+							}
+							ELEMENT[at0036] occurrences matches {0..1} matches {    -- Extracapsular invasion
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0037,    -- Present
+											at0038,    -- Absent
+											at0039,    -- Not known
+											at0040]    -- Awaited
+										}
+									}
+								}
+							}
+							ELEMENT[at0041] occurrences matches {0..1} matches {    -- Perineural invasion
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0042,    -- Yes
+											at0043,    -- No
+											at0044]    -- Not known
+										}
+									}
+								}
+							}
+							ELEMENT[at0045] occurrences matches {0..*} matches {    -- Type of perineural invasion
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0028] occurrences matches {0..1} matches {    -- Histology
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0046] occurrences matches {0..1} matches {    -- Lymphovascular invasion
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0047,    -- Yes
+											at0048,    -- No
+											at0049]    -- Not known
+										}
+									}
+								}
+							}
+							ELEMENT[at0029] occurrences matches {0..1} matches {    -- Differentiation
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0030] occurrences matches {0..1} matches {    -- Growth pattern
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0055] occurrences matches {0..1} matches {    -- Presumed histology
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Previous surgery - reconstruction
-						value matches {
-							DV_CODED_TEXT matches {*}
+					CLUSTER[at0050] occurrences matches {0..1} matches {    -- Diagnostics
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0051] occurrences matches {0..1} matches {    -- Ultrasound scanned
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0052,    -- Yes
+											at0053]    -- No
+										}
+									}
+								}
+							}
+							ELEMENT[at0054] occurrences matches {0..1} matches {    -- Lesion thickness
+								value matches {
+									C_DV_QUANTITY <
+										property = <[openehr::122]>
+										list = <
+											["1"] = <
+												units = <"mm">
+											>
+										>
+									>
+								}
+							}
 						}
 					}
-					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Previous surgery - Other
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Date of surgery
-						value matches {
-							DV_DATE matches {*}
-						}
+					allow_archetype CLUSTER[at0056] occurrences matches {0..*} matches {    -- Tumour specific
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -118,7 +248,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Cancer treatment summary">
+					text = <"Cancer journey summary">
 					description = <"Cancer treatment summary">
 				>
 				["at0001"] = <
@@ -170,15 +300,15 @@ ontology
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"Previous surgery - primary disease">
+					text = <"Primary disease">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"Previous surgery - nodal surgery">
+					text = <"Nodal surgery">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Previous surgery - reconstruction">
+					text = <"Reconstruction">
 					description = <"">
 				>
 				["at0016"] = <
@@ -186,7 +316,163 @@ ontology
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"Previous surgery - Other">
+					text = <"Other surgery">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Resection margin distance">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Involved">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Below 1.00mm">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"1.00 to 2.00mm">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"2.01 to 5.00mm">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"5.01 to 10 .00mm">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"greater than 10.00mm">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Not known">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Previous surgery">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Histology summary">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Histology">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Differentiation">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Growth pattern">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Nodal status">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Negative">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Positive">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Not known">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Awaited">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Extracapsular invasion">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Present">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Absent">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Not known">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Awaited">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Perineural invasion">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Not known">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Type of perineural invasion">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Lymphovascular invasion">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Not known">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Diagnostics">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Ultrasound scanned">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Lesion thickness">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Presumed histology">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Tumour specific">
 					description = <"">
 				>
 			>
