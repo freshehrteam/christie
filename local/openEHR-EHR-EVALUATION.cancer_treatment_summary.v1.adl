@@ -1,0 +1,47 @@
+archetype (adl_version=1.4; uid=ef329117-c06f-4861-b3f8-1daae8135f86)
+	openEHR-EHR-EVALUATION.cancer_treatment_summary.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"ian@freshehr.com">
+		["date"] = <"2024-06-12">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"Apperta Foundation">
+		["original_namespace"] = <"uk.org.apperta">
+		["original_publisher"] = <"Apperta Foundation">
+		["custodian_namespace"] = <"uk.org.apperta">
+		["revision"] = <"1.0.0-alpha.1">
+		["MD5-CAM-1.0.1"] = <"2371784fbe0b4ebcfb63aa8b1e8ffda5">
+		["build_uid"] = <"2656685a-019f-3ca8-bc1a-feb4961eb1ba">
+	>
+
+definition
+	EVALUATION[at0000] matches {*}    -- Cancer treatment summary
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cancer treatment summary">
+					description = <"Cancer treatment summary">
+				>
+			>
+		>
+	>
