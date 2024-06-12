@@ -30,13 +30,13 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"511be0a5488bae19111e2670c5102ce6">
+		["MD5-CAM-1.0.1"] = <"93d136be1542acd46e8e9d364b1fadb1">
 		["build_uid"] = <"7b219b70-e6b8-4c9b-b227-9de5193e888b">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Cancer diagnosis
+	CLUSTER[at0000] matches {    -- Cancer diagnosis detail
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Topography
 				value matches {
@@ -50,7 +50,15 @@ definition
 			}
 			ELEMENT[at0035] occurrences matches {0..1} matches {    -- Basis of diagnosis
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0070,    -- Tumour biopsy
+							at0071,    -- Clinical appearance
+							at0072,    -- Radiological imaging
+							at0073]    -- Other
+						}
+					}
 				}
 			}
 			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Tumour laterality
@@ -68,6 +76,40 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0054] occurrences matches {0..1} matches {    -- Treatment status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0055,    -- No previous treatment
+							at0056]    -- Post previous treatment
+						}
+					}
+				}
+			}
+			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Current disease status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0058,    -- No current evidence of disease
+							at0059,    -- Current evidence of disease present
+							at0060]    -- Current disease status under investigation
+						}
+					}
+				}
+			}
+			ELEMENT[at0067] occurrences matches {0..1} matches {    -- Disease free following primary treatment
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0068,    -- Yes
+							at0069]    -- No
+						}
+					}
+				}
+			}
 			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Recurrence indicator
 				value matches {
 					DV_CODED_TEXT matches {
@@ -76,6 +118,18 @@ definition
 							at0014,    -- YL: Yes, including local recurrence
 							at0015,    -- YD: Yes, not including local recurrence
 							at0016]    -- NN: No, not recurrence
+						}
+					}
+				}
+			}
+			ELEMENT[at0061] occurrences matches {0..1} matches {    -- Current progressive disease
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0062,    -- Yes
+							at0063,    -- No
+							at0064]    -- Awaited
 						}
 					}
 				}
@@ -91,6 +145,16 @@ definition
 				}
 			}
 			ELEMENT[at0048] occurrences matches {0..1} matches {    -- Date of recurrence/progression
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0065] occurrences matches {0..1} matches {    -- Date of relapse
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0066] occurrences matches {0..1} matches {    -- Date of progression
 				value matches {
 					DV_DATE_TIME matches {*}
 				}
@@ -153,7 +217,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Cancer diagnosis">
+					text = <"Cancer diagnosis detail">
 					description = <"Local cluster to capture specific details (not available elsewhere) for cancer diagnosis in Genomics England Cancer datasets.">
 				>
 				["at0001"] = <
@@ -288,6 +352,86 @@ ontology
 				>
 				["at0053"] = <
 					text = <"Morphology transformation">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Treatment status">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"No previous treatment">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Post previous treatment">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Current disease status">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"No current evidence of disease">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Current evidence of disease present">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Current disease status under investigation">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Current progressive disease">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Awaited">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Date of relapse">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Date of progression">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Disease free following primary treatment">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Tumour biopsy">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Clinical appearance">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Radiological imaging">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
