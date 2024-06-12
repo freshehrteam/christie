@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2024-06-12">
 		["name"] = <"Ian McNicoll">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"ian@freshehr.com">
-		["date"] = <"2024-06-12">
 	>
 	lifecycle_state = <"in_development">
 	details = <
@@ -26,13 +26,92 @@ description
 		["original_namespace"] = <"uk.org.apperta">
 		["original_publisher"] = <"Apperta Foundation">
 		["custodian_namespace"] = <"uk.org.apperta">
-		["revision"] = <"1.0.0-alpha.1">
-		["MD5-CAM-1.0.1"] = <"2371784fbe0b4ebcfb63aa8b1e8ffda5">
+		["MD5-CAM-1.0.1"] = <"556839c590e59d2a668505cfcfff4548">
 		["build_uid"] = <"2656685a-019f-3ca8-bc1a-feb4961eb1ba">
+		["revision"] = <"1.0.0-alpha.1">
 	>
 
 definition
-	EVALUATION[at0000] matches {*}    -- Cancer treatment summary
+	EVALUATION[at0000] matches {    -- Cancer treatment summary
+		data matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Primary treatment given with curative intent
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0006,    -- Yes
+									at0007]    -- No
+								}
+							}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Disease free after primary treatment
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0009,    -- Yes
+									at0010]    -- No
+								}
+							}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..*} matches {    -- Previous treatment mode
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..*} matches {    -- Previous systemic chemotherapy regimens
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Previous surgery - primary disease
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Previous surgery - nodal surgery
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Previous surgery - reconstruction
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Previous surgery - Other
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Date of surgery
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Date last updated
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
@@ -41,6 +120,74 @@ ontology
 				["at0000"] = <
 					text = <"Cancer treatment summary">
 					description = <"Cancer treatment summary">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Date last updated">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Primary treatment given with curative intent">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Disease free after primary treatment">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Previous treatment mode">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Previous systemic chemotherapy regimens">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Previous surgery - primary disease">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Previous surgery - nodal surgery">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Previous surgery - reconstruction">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Date of surgery">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Previous surgery - Other">
+					description = <"">
 				>
 			>
 		>
