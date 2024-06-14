@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"uk.org.apperta">
 		["original_publisher"] = <"Apperta Foundation">
 		["custodian_namespace"] = <"uk.org.apperta">
-		["MD5-CAM-1.0.1"] = <"7e3d2e93ff1a5632c2a9f8cbdc87b485">
+		["MD5-CAM-1.0.1"] = <"4d779b722ada9ea2b658f3ca4a83c624">
 		["build_uid"] = <"2656685a-019f-3ca8-bc1a-feb4961eb1ba">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -70,7 +70,7 @@ definition
 					}
 					CLUSTER[at0026] occurrences matches {0..1} matches {    -- Previous surgery
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0013] occurrences matches {0..1} matches {    -- Primary disease
+							ELEMENT[at0013] occurrences matches {0..*} matches {    -- Primary disease
 								value matches {
 									DV_CODED_TEXT matches {*}
 								}
