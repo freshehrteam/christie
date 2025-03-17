@@ -1,0 +1,1570 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "aca4ad92-9832-4314-8d92-60ba3bc34fda",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2025-03-17"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "7f18e3931da62d78c8f5c79f9c4786a6",
+      "PARENT:MD5-CAM-1.0.1" : "78D1421288E4ED0C46F353927AC1B525"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.maindiagnosis.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0079.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0009.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0012.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0078.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0077.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0003.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0005.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0047", "at0048", "at0049" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0072.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0030.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0073.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0074", "at0075", "at0076" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0069.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0043.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-cancer_diagnosis_uk-001.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0039.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0039.2",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location_precise-001.v0",
+            "referenceType" : "archetypeOverlay"
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0032",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0070.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "es" : { },
+      "es-ar" : { },
+      "de" : { },
+      "en" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "Tumour type",
+          "description" : "Identification of the problem or diagnosis, by name.",
+          "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+        },
+        "at0009.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0009.1",
+          "text" : "Additional details",
+          "description" : "Narrative description about the problem or diagnosis.",
+          "comment" : "Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Main diagnosis",
+          "description" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
+          "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
+        },
+        "at0077.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0077.1",
+          "text" : "Date of first symptom/lesion",
+          "description" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.",
+          "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
+        },
+        "at0003.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0003.1",
+          "text" : "Date of initial diagnosis",
+          "description" : "Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.",
+          "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth."
+        },
+        "at0079.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0079.1",
+          "text" : "Morphology",
+          "description" : "Specific variant or subtype of the Diagnosis, if relevant.",
+          "comment" : "For example: 'acute motor axonal neuropathy' as a variant of Guillain-Barre Syndrome. Coding of the name of the variant with a terminology is preferred, where possible. "
+        },
+        "at0012.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0012.1",
+          "text" : "Primary disease site",
+          "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
+          "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant."
+        }
+      },
+      "ar-sy" : { },
+      "pt-br" : { },
+      "nb" : { },
+      "sv" : { },
+      "ko" : { },
+      "fi" : { },
+      "it" : { },
+      "nl" : { },
+      "zh" : { },
+      "ca" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "d4a8ae6a-5803-3d7c-8399-2bdc9ac3b06e",
+  "rmName" : "openehr",
+  "rmRelease" : "1.0.3",
+  "generated" : true,
+  "templateId" : "Main diagnosis",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "da16b9fb-7472-4c01-b81a-61931a260150",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93d136be1542acd46e8e9d364b1fadb1"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For the capture and reporting of cancer diagnosis specific details not available elsewhere in the context of Genomics England Cancer datasets.",
+          "keywords" : [ ],
+          "use" : "Use to record metastatic site, tumour laterality, morphology, topography and recurrence indicator as part of a cancer diagnosis record in the Genomics England Cancer dataset. This cluster is intended to be used inside a Problem/Diagnosis archetype.",
+          "copyright" : "© Clinical Models UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.cancer_diagnosis_uk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-cancer_diagnosis_uk-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0035.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0070", "at0071", "at0072", "at0073" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0028.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0013.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0038.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "380" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "%" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035.1",
+            "text" : "How diagnosed?",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0029", "at0030", "at0031", "at0032", "at0033", "at0034" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0014", "at0015", "at0016" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "7b219b70-e6b8-4c9b-b227-9de5193e888b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "396bc796-2208-4e09-8635-eb9e9564edce",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "62823A86BC1C2B02574125E21F5DECCB"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Identifikation und Dokumentation von strukturierten Daten bezüglich einer bestimmten Körperstelle oder innerhalb des menschlichen Körpers, unter Verwendung makroskopischer anatomischer Fachbegriffe.",
+          "keywords" : [ "Lokalisation", "Stelle", "anatomisch", "anatomischer Bereich", "topographische Anatomie", "makroskopisch", "Anatomie" ],
+          "use" : "Zur Dokumentation von strukturierten und konsistenten Details eines einzelnen bestimmten physischen Bereich innerhalb des menschlichen Körpers verwenden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im Rahmen von allen geeigneten ENTRY- oder CLUSTER-Archetypen entwickelt, die den Kontext des anatomischen Fundortes liefern.\r\n\r\nAls grundlegender Bestandteil der klinischen Praxis, können Mediziner anatomische Lokalisationen auf einer Vielzahl von komplexen und variablen Wegen definieren. In der Praxis tragen einige Archetypen ein einziges Datenelement für eine einfache Beschreibung der Körperstelle - zum Beispiel OBSERVATION.blood_pressure und CLUSTER.symptom bei der Beschreibung von Ohrenschmerzen. In dieser Situation, in der die Wertemenge berechenbar und simpel zu definieren ist, ist dieses einzelne Datenelement eine sehr genaue und pragmatische Möglichkeit, die Stelle im Körper zu protokollieren und zu einem späteren Zeitpunkt abzufragen. In der Situation, in der die anatomische Lage nicht genau definiert ist oder zur Laufzeit bestimmt werden muss, kann es flexibler sein, diesen strukturierten Archetyp zu verwenden. Wenn zum Beispiel jedes Symptom ohne einen vordefinierten Umfang der Symptomatik aufgezeichnet werden kann, dann ist es sinnvoll, diesen Archetyp zu verwenden, um eine spezifische anatomische Lokalisation im Körper zu definieren. In diesem Fall trägt der CLUSTER.symptom Archetyp auch einen SLOT für 'Detaillierte anatomische Lokalisation', der diesen Archetyp enthalten kann, um maximale Flexibilität bei der Erfassung der Daten zur anatomischen Lage zu gewährleisten.\r\n\r\nDieser Archetyp unterstützt die Aufnahme von komplex strukturierten anatomischen Stellen. Beispielsweise findet sich der Scheitelpunkt des Herzens typischerweise am fünften linken Interkostalraum in der Mittelklavikularlinie, Schmerzempfindlichkeit am McBurney-Punkt an der Bauchdecke oder eine Risswunde an der Handflächeninnenseite des proximalen rechten Daumens.\r\n\r\nEine Kombination der Datenelemente in diesem Archetyp kann verwendet werden, um jede Komponente eines postkoordinierten Terminologieausdrucks, der den anatomischen Bereich repräsentiert, individuell zu dokumentieren.\r\n\r\nDer SLOT \"Alternative Struktur\" erlaubt die Aufnahme zusätzlicher Archetypen, die eine alternative Struktur zur Beschreibung derselben Körperstelle bieten, wie z.B. CLUSTER.anatomical_location_relative oder CLUSTER.anatomical_location_clock, falls dies benötigt wird. Wenn dieser Archetyp nur zur Benennung eines großen und/oder unspezifischen Körperteils verwendet werden kann, unterstützt die zusätzliche Verwendung des Archetyps CLUSTER.anatomical_location_relative die Aufnahme einer genaueren Position - zum Beispiel 2 cm vor der kubitalen Fossa des linken Unterarms oder 4 cm unter dem Rippenrand an der Brustwand in der Mittelklavikularlinie.\r\n\r\nWenn dieser Archetyp in anderen Archetypen verwendet wird, in denen das angegebene Thema nicht die Person ist, für die der Datensatz erstellt wird, z.B. ein Fötus in-utero, dann wird der anatomische Ort eine Körperstelle auf oder innerhalb des Fötus identifizieren.\"\r\n",
+          "misuse" : "*Not to be used for specifiying unilateral/bilateral occurrences of an anatomical feature.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att identifiera och strukturerat registrera detaljer om en enskild del på eller i människokroppen genom att använda termer inom makroskopisk anatomi.",
+          "keywords" : [ "lokalisation", "ställe", "anatomisk", "anatomiskt område", "topografisk anatomi", "makroskopisk", "anatomi" ],
+          "use" : "Används för att på ett strukturerat och konsekvent vis registrera detaljer om ett enskilt fysiskt ställe på eller i människokroppen.\r\n\r\nArketypen är specifikt utformad för att användas i lämpliga ENTRY- och CLUSTER-arketyper som sätter den anatomiska lokalisationen i ett sammanhang.\r\n\r\nSom en grundläggande del av klinisk praxis kan kliniker beskriva anatomiska platser på en mängd olika sätt. Vissa arketyper innehåller ett enkelt dataelement för enkel beskrivning av en kroppslig plats - till exempel OBSERVATION.blood_pressure och CLUSTER.symptoms när man beskriver smärta i örat. I denna situation, där uppsättningen värden är förutsägbar och lätt att definiera, är detta enkla dataelement ett mycket exakt och praktiskt sätt att registrera en anatomisk plats på eller i kroppen och söka efter den vid ett senare tillfälle. Men när den anatomiska platsen inte är väldefinierad eller behöver definieras kontinuerligt kan det vara mer flexibelt att använda denna strukturerade arketyp. Till exempel, i en situation där symptom ska registreras utan förkunskap om vilka typer av symptom det kan vara, kan denna arketyp vara användbar för att definiera en anatomisk plats i kroppen. I det här fallet har CLUSTER.symptom-arketypen en \"Lokalisation\"-SLOT som kan innehålla denna arketyp för att stödja maximal flexibilitet vid registrering av anatomiska platsdata.\r\n\r\nArketypen stöder registrering av komplexa strukturerade anatomiska platser. Till exempel finns hjärtspetsstöten typiskt i mitralområdet, ömhet vid McBurneys punkt på bukenväggen eller sårskada på handflatan av den proximala högra tummen.\r\n\r\nEn kombination av dataelement i den här arketypen kan användas för att registrera varje komponent i ett postkoordinerat terminologiskt uttryck som representerar den anatomiska platsen.\r\n\r\nSLOT för ''Alternativ struktur '' möjliggör användning av ytterligare arketyper som ger en alternativ struktur för beskrivning av samma kroppsplats, såsom CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_circle, om detta skulle krävas. I den situation där den här arketypen endast kan användas för att namnge en stor och/eller ospecifik kroppsdel, kan ”CLUSTER. Anatomical_location_relative”-arketypen användas för att registrera en mer exakt plats – till exempel 2 cm främre än fossa cubitalis på vänster arm eller 4 cm under revbensbågen i medioklavikularlinjen på bröstväggen.\r\n\r\nOm denna arketyp används i andra arketyper där patienten inte är den som dokumentationen syftar till, till exempel foster-in-utero, kommer den anatomiska lokalisationen att identifieras som en lokalisation på eller i fostrets kropp.",
+          "misuse" : "Används inte för att ange unilaterala eller bilaterala förekomster av ett anatomiskt särdrag.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registering av strukturerte detaljer om én enkelt makroskopisk fysisk lokalisering på eller i menneskekroppen.",
+          "keywords" : [ "sted", "lokalisering", "lokalisasjon", "anatomisk", "kroppssted", "anatomisk region", "topografisk anatomi", "makroskopisk", "anatomi", "kroppsdel", "dermatom", "legemsdel" ],
+          "use" : "Brukes for å dokumentere strukturerte og ensartede detaljer om et enkelt identifisert fysisk sted på eller i menneskekroppen.\r\n\r\nDenne arketypen er spesifikt designet for bruk i ENTRY og CLUSTER-arketyper som gir konteksten for den anatomiske lokaliseringen.\r\n\r\nSom en grunnleggende del av klinisk praksis kan klinikere beskrive anatomiske lokaliseringer på et utall forskjellige måter. Noen arketyper inneholder et enkelt dataelement for enkel beskrivelse av en kroppslig lokalisering - for eksempel OBSERVATION.blood_pressure, og CLUSTER.symptom når man beskriver øresmerter. I denne situasjonen, hvor verdisettet er forutsigbart og enkelt å definere, er dette enkle dataelementet en meget nøyaktig og praktisk måte for å registrere et anatomisk sted på eller i kroppen og søke på det på et senere tidspunkt. Når den anatomiske lokaliseringen derimot ikke er veldefinert eller må defineres fortløpende, kan det være mer fleksibelt å bruke denne strukturerte arketypen. For eksempel i en situasjon hvor et hvilket som helst symptom kan bli registrert uten noen forkunnskaper om hvilke typer symptomer det kan være, så vil muligheten for å bruke denne arketypen være nyttig. I dette tilfellet har CLUSTER.symptom-arketypen et SLOT for \"Strukturert anatomisk lokalisering\" som kan inneholde denne arketypen for å støtte maksimal fleksibilitet i registrering av data om den anatomiske lokaliseringen.\r\n\r\nArketypen støtter registrering av komplekse strukturerte anatomiske steder. For eksempel finnes hjertespisstøt typisk i femte venstre intercostalrom i midtclaviculære linjen, ømhet ved McBurney's punkt på abdomen eller laserasjon på den palmare siden av den proksimale høyre tommelen.\r\n\r\nEn kombinasjon av dataelementer i denne arketypen kan brukes for individuell registrering av hver komponent av et postkoordinert terminologiuttrykk for anatomisk sted.\r\n\r\nArketypen inneholder et \"Alternativ struktur\" SLOT som tillater inklusjon av ytterligere arketyper som gir en alternativ struktur for beskrivelse av det samme kroppssted, som CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_clock om dette er nødvendig. I en situasjon hvor denne arketypen bare brukes til å navngi en større og/eller ikke-spesifikk kroppsdel, kan ytterligere bruk av CLUSTER.anatomical_location_relative-arketypen understøtte registrering av en mer presis lokasjon - for eksempel 2 cm anteriort for venstre arms cubitalfossa eller 4 cm under høyre costamargin på brystveggen i midtclaviculærlinjen.\r\n\r\nHvis denne arketypen brukes i andre arketyper hvor pasienten/klienten ikke er den som dokumentasjonen omhandler, for eksempel foetus-in-utero, så vil den anatomiske lokaliseringen bli identifisert som en lokalisering på eller i kroppen til fosteret.",
+          "misuse" : "Brukes ikke for spesifisering av unilateral/bilateral forekomst av et anatomisk kjennetegn.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para identificar e anotar informações estruturadas sobre um único local físico do corpo humano usando termos anatômicos macroscópicos.",
+          "keywords" : [ "localização", "local", "anatômico", "região anatômica", "topografia anatômica", "macroscópico", "anatomia" ],
+          "use" : "Use para gravar detalhes estruturados e consistentes sobre um único local físico identificado do corpo humano.\r\n\r\nEste arquétipo foi projetado especificamente para ser utilizado dentro do contexto de qualquer entrada ou CLUSTER arquétipo que forneça o contexto da localização anatômica.\r\n\r\nComo uma parte fundamental da prática clínica, os médicos podem descrever localizações anatômicas em uma miríade de formas complexas e variáveis. Na prática, alguns arquétipos carregam um elemento de dados único para o transporte de uma simples descrição do local do corpo - por exemplo, OBSERVATION.blood_pressure e CLUSTER.symptom quando descrevem a dor de ouvido. Nesta situação, onde o valor definido é previsível e simples de definir, este elemento de dados único é uma maneira muito precisa e pragmática para gravar o local no corpo e a consulta em uma data posterior. No entanto na situação onde a localização anatômica não é bem definida ou precisa ser determinada em tempo de execução, pode ser mais flexível para usar este arquétipo estruturado. Por exemplo, na situação onde qualquer sintoma pode ser gravado sem qualquer escopo predefinido do tipo, em seguida, permitindo o uso deste arquétipo especificamente, definir uma localização anatômica do corpo pode ser útil. Neste caso, o arquétipo CLUSTER.symptom carrega também um SLOT para localização anatômica detalhada que inclui este arquétipo para oferecer suporte a máxima flexibilidade na gravação de dados da localização anatômica.\r\n\r\nEste arquétipo suporta gravação de locais anatômicos estruturados complexos. Por exemplo, a batida do ápice do coração é normalmente encontrada no quinto espaço intercostal esquerdo na linha médio-clavicular, ou a sensibilidade em ponto de McBurneys na parede abdominal ou laceração na face palmar do polegar direito proximal.\r\n\r\nUma combinação de elementos de dados neste arquétipo pode ser usado para gravar individualmente cada componente de uma expressão de terminologia coordenada que representa o site anatômico.\r\n\r\nA estrutura alternativa SLOT permite a inclusão de arquétipos adicionais que fornecem uma estrutura alternativa para descrever o mesmo local do corpo, como CLUSTER.anatomical_location_relative ou CLUSTER.anatomical_location_clock, esta deve ser exigida. Na situação onde este arquétipo só pode ser usado para nomear uma parte do corpo e/ou não-específica, o uso adicional do arquétipo CLUSTER.anatomical_location_relative oferecerá suporte a gravação de uma localização mais precisa - por exemplo, 2 cm anterior da fossa cubital do antebraço esquerdo ou 4 cm abaixo da margem costal de R na parede torácica na linha médio-clavicular.\r\n\r\nSe este arquétipo é usado dentro de outros arquétipos onde o assunto especificado de cuidados não é o indivíduo para quem o registro está sendo criado, por exemplo um feto em útero, então a localização anatômica vai estar realizada identificando um local do corpo ou com o feto.",
+          "misuse" : "Não deve ser usado para especificar as ocorrências unilateral/bilateral de uma característica anatômica.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To identify and record structured details about a single physical site on, or within, the human body using macroscopic anatomical terms.",
+          "keywords" : [ "location", "site", "anatomical", "anatomic region", "topographic anatomy", "macroscopic", "anatomic", "anatomy" ],
+          "use" : "Use to record structured and consistent details about a single identified physical site on, or within, the human body. \r\n\r\nThis archetype is specifically designed to be used within the context of any appropriate ENTRY or CLUSTER archetypes which supply the context of the anatomical location. \r\n\r\nAs a fundamental part of clinical practice, clinicians can describe anatomical locations in a myriad of complex and variable ways. In practice, some archetypes carry a single data element for carrying a simple description of body site - for example, OBSERVATION.blood_pressure and CLUSTER.symptom when describing ear pain. In this situation, where the value set is predictable and simple to define, this single data element is a very accurate and pragmatic way to record the site in the body and to query at a later date. However in the situation where the anatomical location is not well defined or needs to be determined at run-time, it may be more flexible to use this structured archetype. For example, in the situation where any symptom can be recorded without any predefined scope of the type of symptom, then allowing the use of this archetype to specifically define an anatomical location in the body may be useful. In this case the CLUSTER.symptom archetype also carries a SLOT for 'Detailed anatomical location' which can include this archetype to support maximal flexibility in recording anatomical location data.\r\n\r\nThis archetype supports recording complex structured anatomical sites. For example, the apex beat of the heart is typically found at the fifth left intercostal space in the mid-clavicular line, tenderness at McBurney's point on the abdominal wall or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nA combination of the data elements in this archetype can be used to individually record each component of a postcoordinated terminology expression that represents the anatomical site.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In the situation where this archetype can only be used to name a large and/or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location - for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below R costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in-utero, then the anatomical location will be identifying a body site on or within the fetus.",
+          "misuse" : "Not to be used for specifiying unilateral/bilateral occurrences of an anatomical feature.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record details about anatomical location.(en)",
+          "keywords" : [ "*location(en)", "*site(en)", "*anatomical(en)" ],
+          "misuse" : "*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تسجيل المكان التشريحي بالتفصيل",
+          "keywords" : [ "الموقع", "المكان", "تشريحي" ],
+          "misuse" : "لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen, in macroscopische anatomische termen.",
+          "keywords" : [ "locatie", "structuur", "anatomisch", "anatomische regio", "topografische anatomie", "macroscopisch" ],
+          "use" : "Gebruik om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen.",
+          "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0064.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0055.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0023.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "sl" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "en" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Primary disease site",
+            "description" : "Identification of a single physical site either on, or within, the human body.",
+            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+          }
+        },
+        "nb" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "pt-br" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "nl" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        },
+        "sv" : {
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : ""
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "13ee6d25-aa99-4221-bdc1-3c7ee7e58795",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Åsa Skagerhult, Linda Aulin",
+        "organisation" : "Region Östergötland, Region Stockholm",
+        "email" : "asa.skagerhult@regionostergotland.se, linda.aulin@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Biljana Princic"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Michiel Klitsie",
+        "organisation" : "Nedap Healthcare",
+        "email" : "michiel.klitsie@nedap.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "78aae43c-837a-4ba6-be86-f7c2d0e9c058",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "AB7A3217725E14E6A0A8E6545A3F37FE"
+      },
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record highly detailed anatomical location.",
+          "keywords" : [ "coordinates", "specimen", "DICOM" ],
+          "use" : "Use where highly precise localisation information is required, using co-ordinates. This archetype has been designed to support DICOM based coordinate systems for accurate object localisation.\r\n\r\nDesigned to fit within appropriate ENTRY or CLUSTER archetypes, especially CLUSTER.anatomical_location.",
+          "misuse" : "Not designed to be used as a standalone archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location_precise.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_location_precise-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "defaultValue" : {
+                "value" : "Top left corner",
+                "@type" : "DV_TEXT"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "122" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "INTEGER",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 0,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Site of lesion on image",
+            "description" : "Record details about precise anatomical location of a specimen or body part, including coordinates."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "bd82c868-7c22-452a-a584-57c729df676e",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
